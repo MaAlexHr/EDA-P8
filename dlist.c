@@ -178,7 +178,7 @@ bool remove_pos(dlist *l ,int pos){
         return remove_init(l);
     }else if(pos == l->num-1){
         return remove_end(l);
-    }else if(pos>0 && pos < l->num-1){//Cambie l->num-2 por l->num-1
+    }else if(pos>0 && pos < l->num-1){
         dnode *t = l->head->next;
         for(int i =1; i < pos; i++){
             t= t->next;
